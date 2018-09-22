@@ -1,0 +1,18 @@
+@component('profiles.activities.activity')
+
+    @slot('heading')
+    {{ $profileUser->name }} replied to 
+    <a href="{{ $activity->subject->thread->path() }}">{{ $activity->subject->thread->title }}</a>
+    @endslot
+
+    @slot('body')
+    {{ $activity->subject->body }}
+
+    @endslot
+
+@endcomponent
+
+    {{-- activity, give the model(ie subject is Reply, give the body) --}}
+
+
+
