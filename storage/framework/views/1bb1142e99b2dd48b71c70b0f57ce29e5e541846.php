@@ -67,14 +67,6 @@
 
                     <user-notifications></user-notifications>
 
-                    
-
-                    <div id="vue1">
-                        <greeting></greeting>
-                    </div>
-
-
-
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             <?php echo e(Auth::user()->name); ?> <span class="caret"></span>
@@ -104,7 +96,3 @@
         </div>
     </div>
 </nav>
-
-
-<script src="<?php echo e(asset('js/notice.js')); ?>"></script>
-
